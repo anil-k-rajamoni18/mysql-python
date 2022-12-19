@@ -1,0 +1,145 @@
+
+
+
+
+INTRODUCTION
+====================
+
+TWO TYPES OF DB's
+	- RELATIONAL DATABASES 
+	- NON RELATIONAL DATABASES
+	
+MySQL is a widely used relational database management system (RDBMS).
+
+MySQL is free and open-source.
+
+MySQL is ideal for both small and large applications.
+
+
+What is MySQL?
+==========================
+MySQL is a relational database management system
+MySQL is open-source
+MySQL is free
+MySQL is ideal for both small and large applications
+MySQL is very fast, reliable, scalable, and easy to use
+MySQL is cross-platform (windows , unix/linux, macos)
+MySQL is compliant with the ANSI SQL standard
+MySQL was first released in 1995
+MySQL is developed, distributed, and supported by Oracle Corporation
+MySQL is named after co-founder Monty Widenius's daughter: My
+
+
+Show Data On Your Web Site
+======================================
+To build a web site that shows data from a database, you will need:
+
+An RDBMS database program (like MySQL)
+A server-side scripting language, like PYTHON , JAVA
+To use SQL to get the data you want
+To use HTML / CSS to style the page
+
+user ------->- website (html,css,js) FRONTEND -------> BACKEND(java/python/ruby) ------> DB server.
+
+What is RDBMS?
+=============================
+RDBMS stands for Relational Database Management System.
+
+RDBMS is a program used to maintain a relational database.
+
+RDBMS is the basis for all modern database systems such as MySQL, Microsoft SQL Server, Oracle, and Microsoft Access.
+
+RDBMS uses SQL queries to access the data in the database.
+
+
+price > 50 ---- SQL(query) ---- DBSERVER(DATABASE) 
+
+SELECT * from Cart where price > 50;
+
+
+TERMINOLOGIES 
+======================
+SERVER
+DATABASE
+SCHEMA 
+TABLE 
+ROW
+COLUMN
+PRIMARYKEY 
+
+
+how to install? (10mins)
+------------------------ 	
+https://www.youtube.com/watch?v=Rxp3T5GKlR4
+
+- SERVER
+- WORKBENCH 
+- SHELL 
+
+PORT : 3306. 
+
+how to check 
+====================
+
+open CMD :
+	type : mysql --version
+
+difference SQL VS NO SQL 
+==========================
+
+https://www.geeksforgeeks.org/difference-between-sql-and-nosql/
+
+
+
+POPULAR COMMANDS
+=======================
+mysql 
+SELECT - extracts data from a database
+UPDATE - updates data in a database
+DELETE - deletes data from a database
+INSERT INTO - inserts new data into a database
+CREATE DATABASE - creates a new database
+ALTER DATABASE - modifies a database
+CREATE TABLE - creates a new table
+ALTER TABLE - modifies a table
+DROP TABLE - deletes a table
+CREATE INDEX - creates an index (search key)
+DROP INDEX - deletes an index
+
+
+EX:
+	DATABASE : FOOD 
+	TABLES : items 
+	
+CREATE TABLE items (
+    ID int,
+    name varchar(255),
+    price int,
+    review varchar(255)
+);
+
+INSERT INTO items (ID, name, price,review)
+VALUES (2, "chicken fried rice", 55, "ok");
+
+INSERT INTO items (ID, name, price,review)
+VALUES (6, "lemon juice", 45, "sweety");
+
+
+UPDATE items
+SET price = 65, name = "chicken fried rice"
+WHERE ID =2;
+
+
+
+DELETE FROM items WHERE ID =2;
+	
+	
+CRUD operations 
+=======================
+CREATE READ UPDATE DELETE...
+
+
+APPLICATION (python) INTERACT with DB(MYSQL)
+====================================
+
+
